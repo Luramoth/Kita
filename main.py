@@ -10,7 +10,7 @@ class MainWindow(QMainWindow):
         self.ui.setupUi(self)
 
 def clickTest():
-    print('event passed')
+    print('fuck you torvalds')
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
