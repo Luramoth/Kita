@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>803</width>
+    <height>484</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Kita</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>410</y>
+      <width>181</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Hack</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Kita Pre-Beta 0.0.1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>yes</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>88</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>No</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>803</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuKita">
+    <property name="title">
+     <string>Kita</string>
+    </property>
+    <addaction name="actionWhat"/>
+   </widget>
+   <widget class="QMenu" name="menufartspit">
+    <property name="title">
+     <string>fartspit</string>
+    </property>
+    <widget class="QMenu" name="menuspitfart">
+     <property name="title">
+      <string>spitfart</string>
+     </property>
+     <widget class="QMenu" name="menufartfart">
+      <property name="title">
+       <string>fartfart</string>
+      </property>
+      <addaction name="actionwhy_did_you_go_through_all_this"/>
+     </widget>
+     <addaction name="actionspitspit"/>
+     <addaction name="menufartfart"/>
+    </widget>
+    <addaction name="menuspitfart"/>
+   </widget>
+   <addaction name="menuKita"/>
+   <addaction name="menufartspit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionPress_this_for_me_to_say_skrew_u">
+   <property name="text">
+    <string>Press this for me to say skrew u</string>
+   </property>
+  </action>
+  <action name="actionWhat">
+   <property name="text">
+    <string>What</string>
+   </property>
+  </action>
+  <action name="actionspitspit">
+   <property name="text">
+    <string>spitspit</string>
+   </property>
+  </action>
+  <action name="actionwhy_did_you_go_through_all_this">
+   <property name="text">
+    <string>why did you go through all this</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
