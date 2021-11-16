@@ -29,6 +29,10 @@ class Ui_MainWindow(object):
         self.actionPress_this_for_me_to_say_skrew_u.setObjectName(u"actionPress_this_for_me_to_say_skrew_u")
         self.actionWhat = QAction(MainWindow)
         self.actionWhat.setObjectName(u"actionWhat")
+        self.actionspitspit = QAction(MainWindow)
+        self.actionspitspit.setObjectName(u"actionspitspit")
+        self.actionwhy_did_you_go_through_all_this = QAction(MainWindow)
+        self.actionwhy_did_you_go_through_all_this.setObjectName(u"actionwhy_did_you_go_through_all_this")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.label = QLabel(self.centralwidget)
@@ -50,15 +54,24 @@ class Ui_MainWindow(object):
         self.menubar.setGeometry(QRect(0, 0, 803, 30))
         self.menuKita = QMenu(self.menubar)
         self.menuKita.setObjectName(u"menuKita")
+        self.menufartspit = QMenu(self.menubar)
+        self.menufartspit.setObjectName(u"menufartspit")
+        self.menuspitfart = QMenu(self.menufartspit)
+        self.menuspitfart.setObjectName(u"menuspitfart")
+        self.menufartfart = QMenu(self.menuspitfart)
+        self.menufartfart.setObjectName(u"menufartfart")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
         MainWindow.setStatusBar(self.statusbar)
 
         self.menubar.addAction(self.menuKita.menuAction())
+        self.menubar.addAction(self.menufartspit.menuAction())
         self.menuKita.addAction(self.actionWhat)
-
-        
+        self.menufartspit.addAction(self.menuspitfart.menuAction())
+        self.menuspitfart.addAction(self.actionspitspit)
+        self.menuspitfart.addAction(self.menufartfart.menuAction())
+        self.menufartfart.addAction(self.actionwhy_did_you_go_through_all_this)
 
         self.retranslateUi(MainWindow)
 
@@ -69,9 +82,14 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Kita", None))
         self.actionPress_this_for_me_to_say_skrew_u.setText(QCoreApplication.translate("MainWindow", u"Press this for me to say skrew u", None))
         self.actionWhat.setText(QCoreApplication.translate("MainWindow", u"What", None))
+        self.actionspitspit.setText(QCoreApplication.translate("MainWindow", u"spitspit", None))
+        self.actionwhy_did_you_go_through_all_this.setText(QCoreApplication.translate("MainWindow", u"why did you go through all this", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Kita Pre-Beta 0.0.1", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"yes", None))
         self.pushButton.setText(QCoreApplication.translate("MainWindow", u"No", None))
         self.menuKita.setTitle(QCoreApplication.translate("MainWindow", u"Kita", None))
+        self.menufartspit.setTitle(QCoreApplication.translate("MainWindow", u"fartspit", None))
+        self.menuspitfart.setTitle(QCoreApplication.translate("MainWindow", u"spitfart", None))
+        self.menufartfart.setTitle(QCoreApplication.translate("MainWindow", u"fartfart", None))
     # retranslateUi
 
